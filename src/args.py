@@ -111,7 +111,7 @@ def get_parser():
     parser.add_argument('--resize',dest='resize', action='store_true')
     parser.set_defaults(resize=False)
     parser.add_argument('-num_classes', dest='num_classes', default = 21, type=int)
-    parser.add_argument('-dataset', dest='dataset', default = 'davis2017',choices=['davis2017', 'youtube'])
+    parser.add_argument('-dataset', dest='dataset', default = 'davis2017',choices=['davis2017', 'youtube', 'youtop'])
     parser.add_argument('-youtube_dir', dest='youtube_dir',
                         default='../../databases/YouTubeVOS/')
 

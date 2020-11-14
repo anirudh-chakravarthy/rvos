@@ -10,7 +10,8 @@ def get_dataset(args, split, image_transforms = None, target_transforms = None, 
         from .davis2017 import DAVISLoader as MyChosenDataset
     elif args.dataset == 'youtube':
         from .youtubeVOS import YoutubeVOSLoader as MyChosenDataset
-    
+    elif args.dataset == 'youtop':
+        from .youtop200 import Youtop200Loader as MyChosenDataset
     
 
 
